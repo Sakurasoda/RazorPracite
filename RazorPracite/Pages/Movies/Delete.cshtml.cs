@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -12,9 +9,9 @@ namespace RazorPracite.Pages.Movies
 {
     public class DeleteModel : PageModel
     {
-        private readonly RazorPracite.Data.RazorPraciteContext _context;
+        private readonly RazorPraciteContext _context;
 
-        public DeleteModel(RazorPracite.Data.RazorPraciteContext context)
+        public DeleteModel(RazorPraciteContext context)
         {
             _context = context;
         }

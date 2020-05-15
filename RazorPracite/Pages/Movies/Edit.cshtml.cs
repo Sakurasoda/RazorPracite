@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RazorPracite.Data;
 using RazorPracite.Models;
@@ -13,9 +10,9 @@ namespace RazorPracite.Pages.Movies
 {
     public class EditModel : PageModel
     {
-        private readonly RazorPracite.Data.RazorPraciteContext _context;
+        private readonly RazorPraciteContext _context;
 
-        public EditModel(RazorPracite.Data.RazorPraciteContext context)
+        public EditModel(RazorPraciteContext context)
         {
             _context = context;
         }

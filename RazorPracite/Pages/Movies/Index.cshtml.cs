@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RazorPracite.Data;
@@ -12,9 +9,9 @@ namespace RazorPracite.Pages.Movies
 {
     public class IndexModel : PageModel
     {
-        private readonly RazorPracite.Data.RazorPraciteContext _context;
+        private readonly RazorPraciteContext _context;
 
-        public IndexModel(RazorPracite.Data.RazorPraciteContext context)
+        public IndexModel(RazorPraciteContext context)
         {
             _context = context;
         }
